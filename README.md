@@ -1,5 +1,5 @@
 # FB_Prophet_modeling_on_Sales
-Exploration on Rossman's Sales data by using the Facebook's Prophet time series model.
+Exploration on Rossmann's Sales data by using the Facebook's Prophet time series model.
 
 Not like general auto-regressive model, the predicted value in Prophet is according to time factor itself. In this project, we are trying to use Facebook's Prophet Model to fit the sales in Store two in the dataset. To finetune the model, we will try to ignore the sales when the store is closed, and try to increase the flexibility by adjusting the change point prior scale.
 
@@ -14,3 +14,5 @@ model with default parameters and data excludes sales(0 units) in Saturday and S
 4. m_open_cp
 model with hyperparameter changepoint_prior_scale adjusted and data excludes sales(0 units) in Saturday and Sunday 
 
+Reference:
+https://facebook.github.io/prophet/
